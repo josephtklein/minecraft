@@ -1,6 +1,7 @@
+# fork from 1tzg/minecraft
 FROM openjdk:8u212-jre-alpine
 
-LABEL maintainer "itzg"
+LABEL maintainer "josephtklein"
 
 RUN apk add --no-cache -U \
   openssl \
