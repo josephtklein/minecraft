@@ -3,7 +3,7 @@ FROM alpine:latest
 
 LABEL maintainer "josephtklein"
 
-RUN apk add --update-cache --no-cache -U \
+RUN apk add --update-cache \
   openssl \
   imagemagick \
   lsof \
@@ -17,7 +17,7 @@ RUN apk add --update-cache --no-cache -U \
   tzdata \
   rsync \
   nano \
-  openjdk14 \
+  openjdk \
   python python-dev py2-pip
 
 RUN pip install mcstatus yq
