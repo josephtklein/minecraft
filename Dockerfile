@@ -18,7 +18,7 @@ RUN apk add  --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge
   rsync \
   nano \
   openjdk14 \
-  python python-dev py2-pip
+  python3 python3-dev py3-pip
 
 RUN pip install mcstatus yq
 
