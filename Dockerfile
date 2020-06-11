@@ -3,7 +3,7 @@ FROM alpine:latest
 
 LABEL maintainer "josephtklein"
 
-RUN apk add --no-cache -U \
+RUN apk add --update-cache --no-cache -U \
   openssl \
   imagemagick \
   lsof \
