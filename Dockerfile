@@ -1,5 +1,5 @@
 # fork from 1tzg/minecraft
-FROM openjdk:latest-jre-alpine
+FROM alpine:latest
 
 LABEL maintainer "josephtklein"
 
@@ -17,6 +17,7 @@ RUN apk add --no-cache -U \
   tzdata \
   rsync \
   nano \
+  openjdk14 \
   python python-dev py2-pip
 
 RUN pip install mcstatus yq
