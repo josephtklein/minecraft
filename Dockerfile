@@ -1,5 +1,5 @@
 # fork from 1tzg/minecraft
-FROM openjdk:8u212-jre-alpine
+FROM openjdk:latest-jre-alpine
 
 LABEL maintainer "josephtklein"
 
@@ -34,7 +34,7 @@ RUN echo 'hosts: files dns' > /etc/nsswitch.conf
 
 ARG RESTIFY_VER=1.1.6
 ARG RCON_CLI_VER=1.4.6
-ARG MC_SERVER_RUNNER_VER=1.14.4
+ARG MC_SERVER_RUNNER_VER=1.15.2
 ARG ARCH=amd64
 
 ADD https://github.com/itzg/restify/releases/download/${RESTIFY_VER}/restify_${RESTIFY_VER}_linux_${ARCH}.tar.gz /tmp/restify.tgz
